@@ -544,3 +544,60 @@ button:hover{
         font-size: 12px;
     }
 }
+
+/* SCROLL TOP BUTTON */
+
+.scroll-top-btn{
+
+    position: fixed;
+
+    bottom: 25px;
+
+    right: 25px;
+
+    background: none;
+
+    border: none;
+
+    color: #FB6D3A;
+
+    font-size: 42px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    transition: 0.3s;
+
+    z-index: 999;
+
+    padding: 0;
+
+    line-height: 1;
+}
+
+.scroll-top-btn:hover{
+
+    transform: scale(1.18);
+
+    color: #FB6D3A;
+
+    background: none;
+}
+
+.scroll-top-btn.show{
+
+    opacity: 1;
+
+    visibility: visible;
+    display: flex;
+
+justify-content: center;
+
+align-items: center;
+}
+
