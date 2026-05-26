@@ -23,9 +23,16 @@
 
 <body>
 
+<button class="theme-button"
+        id="themeButton">
+
+    Change Theme
+
+</button>
+
 <div class="me-container">
 
-    <!-- Sidebar -->
+    <!-- SIDEBAR -->
 
     <aside class="sidebar-section">
 
@@ -88,15 +95,15 @@
                 </li>
 
                 <li class="skills-item">
+                    <span>JavaScript</span>
+                </li>
+
+                <li class="skills-item">
                     <span>Git</span>
                 </li>
 
                 <li class="skills-item">
                     <span>GitHub</span>
-                </li>
-
-                <li class="skills-item">
-                    <span>Visual Studio Code</span>
                 </li>
 
             </ul>
@@ -129,7 +136,7 @@
 
     </aside>
 
-    <!-- Main Content -->
+    <!-- MAIN -->
 
     <div class="main-content-section">
 
@@ -148,53 +155,65 @@
                 Маю досвід роботи на підприємстві
                 Bader Україна.
                 Цікавлюся Frontend розробкою,
-                HTML, Git та веб-технологіями.
+                HTML, CSS та JavaScript.
 
             </p>
 
         </div>
 
-        <div class="projects-section">
+       <!-- PROJECTS -->
 
-            <h3 class="main-content-title">
-                Projects
-            </h3>
+<div class="projects-section">
 
-            <ol class="projects-list">
+    <h3 class="main-content-title">
+        Projects
+    </h3>
 
-                <li class="projects-item">
+    <ol class="projects-list">
 
-                    <a href="https://github.com/FillsAgler/lab_2"
-                       target="_blank">
+        <li class="projects-item">
 
-                        Lab 2 HTML Resume
+            <a href="https://github.com/FillsAgler/Lab_3"
+               target="_blank">
 
-                    </a>
+                Resume Website
 
-                    ..............
+            </a>
 
-                    [ HTML ]
+            [ HTML, CSS, JS ]
 
-                </li>
+        </li>
 
-                <li class="projects-item">
+        <li class="projects-item">
 
-                    <a href="https://github.com/FillsAgler/lab_3"
-                       target="_blank">
+            <a href="https://fillsagler.github.io/goit-markup-hw-08/"
+               target="_blank">
 
-                        Lab 3 CSS Resume
+                Demo WEB STUDIO
 
-                    </a>
+            </a>
 
-                    ..............
+            [ Responsive Layout ]
 
-                    [ HTML, CSS ]
+        </li>
 
-                </li>
+        <li class="projects-item">
 
-            </ol>
+            <a href="http://fillsagler.github.io/Team-proj-demo/"
+               target="_blank">
 
-        </div>
+                Team Project Demo
+
+            </a>
+
+            [ Team Work Project ]
+
+        </li>
+
+    </ol>
+
+</div>
+        <!-- EXPERIENCE -->
 
         <div class="work-section">
 
@@ -204,7 +223,7 @@
 
             <h4 class="work-position">
 
-                Працівник виробництва
+                Механік швейного обладнання 
 
                 <span class="orange-text">
                     Bader Україна
@@ -214,45 +233,47 @@
 
             <p class="work-period">
 
-                2024 - 2026
-                |
-                Україна
+                2020 - 2022 | Україна
 
             </p>
 
             <ul class="work-list">
 
                 <li>
-                    Робота на виробництві
-                </li>
-
-                <li>
                     Робота з технічним обладнанням
                 </li>
 
                 <li>
-                    Досвід командної роботи
+                    Командна робота
+                </li>
+
+                <li>
+                    Відповідальність
+                </li>
+
+                <li>
+                    Точність
                 </li>
 
             </ul>
 
         </div>
 
-        <div class="education-section">
+        <!-- COMMENTS -->
+
+        <div class="comments-section">
 
             <h3 class="main-content-title">
-                Education
+                Employer Comments
             </h3>
 
-            <h4 class="orange-text">
-                Механік швейного обладнання
-            </h4>
+            <div id="comments">
 
-            <p class="education-country">
-                Україна
-            </p>
+            </div>
 
         </div>
+
+        <!-- FORM -->
 
         <div class="form-section">
 
@@ -260,17 +281,21 @@
                 Contact Form
             </h3>
 
-            <form>
+            <form action="https://formspree.io/f/xzdwkgzd"
+                  method="POST">
 
                 <input type="text"
+                       name="name"
                        placeholder="Your name"
                        required>
 
                 <input type="email"
+                       name="email"
                        placeholder="Your email"
                        required>
 
-                <textarea rows="5"
+                <textarea name="message"
+                          rows="5"
                           placeholder="Your message"></textarea>
 
                 <button type="submit">
@@ -284,6 +309,58 @@
     </div>
 
 </div>
+
+<!-- MODAL -->
+
+<div class="modal"
+     id="modal">
+
+    <div class="modal-content">
+
+        <button class="close-modal"
+                id="closeModal">
+
+            ×
+
+        </button>
+
+        <h2>
+            Contact Me
+        </h2>
+
+        <form id="modalForm"
+              action="https://formspree.io/f/xzdwkgzd"
+              method="POST">
+
+            <input type="text"
+                   name="name"
+                   placeholder="Your name"
+                   required>
+
+            <input type="email"
+                   name="email"
+                   placeholder="Your email"
+                   required>
+
+            <input type="tel"
+                   name="phone"
+                   placeholder="Your phone">
+
+            <textarea name="message"
+                      rows="5"
+                      placeholder="Your message"></textarea>
+
+            <button type="submit">
+                Send
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+<script src="js/script.js"></script>
 
 </body>
 
